@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+  font-weight: 300;
+}
+
 html,
       body {
         position: relative;
@@ -6,11 +12,16 @@ html,
 
       body {
         background: rgb(255, 255, 255);
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 14px;
         color: #000;
         margin: 0;
         padding: 0;
+        font-weight: 100;
+      }
+
+      .navbar-brand img{
+        max-width: 40%;
       }
 
       .swiper {
@@ -66,8 +77,6 @@ html,
       }
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
-
 /* ---- grid ---- */
 
 .grid {
@@ -88,7 +97,7 @@ body { font-family: sans-serif; }
   width: 160px;
   height: 120px;
   float: left;
-  background: rgb(10, 125, 18);
+  background: rgb(175, 190, 176);
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -102,21 +111,66 @@ body { font-family: sans-serif; }
 
 .title-sections{
   font-size: 20px;
+  
 }
 
-.h6-1{
+.linha-text{
+  width: 100%;
+  border-bottom: 1px solid #626262;
+  position: absolute;
+  top: 28px;
+}
+
+.h6-riscado{
   color: #626262;
+  margin: 0;
+  line-height: 40px;
+  font-weight: 300;
 }
 
 .text-extra{
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 40px;
 }
 
 .h4-1{
   color: #232323;
+  font-weight: 300;;
 }
 .section-dark{
   background-color: #000;
   color: #b7b7b7;
+}
+
+.img{
+display: inline-flex;
+}
+
+@keyframes slidein{
+  from { margin-bottom: 50%; }
+  to   { margin-top: 100%; }
+}
+
+.footer img{
+width: 110px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .text-extra, .title-sections .text-fixed {
+    font-size: 2em;
+  }
+} 
+
+@media screen and (max-width: 480px) {
+  .text-extra, .title-sections .text-fixed{
+    font-size: 12px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+}
+
+.risco-text{
+  height: 20px;
+  width: 100%;
+  position: relative;
 }
