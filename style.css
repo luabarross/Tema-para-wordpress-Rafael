@@ -4,6 +4,32 @@
   font-weight: 300;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .text-extra, .title-sections{
+    font-size: 2em;
+  }
+} 
+
+@media screen and (max-width: 480px) {
+  .text-extra, .title-sections{
+    font-size: 12px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+}
+
+@keyframes slidein{
+
+  from {
+    margin-bottom:100%;
+  }
+
+  to {
+    margin-top:0%;
+  }
+}
+
 html,
       body {
         position: relative;
@@ -109,9 +135,11 @@ html,
 .grid-item--height3 { height: 500px; }
 .grid-item--height4 { height: 250px; }
 
-.title-sections{
-  font-size: 20px;
-  
+/* ---- final grid item ---- */
+
+.section-size{
+  width: 100%;
+  height: 80%;
 }
 
 .linha-text{
@@ -121,10 +149,17 @@ html,
   top: 28px;
 }
 
-.h6-riscado{
+.risco-text{
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.title-sections{
   color: #626262;
   margin: 0;
   line-height: 40px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -132,45 +167,65 @@ html,
   font-size: 40px;
 }
 
-.h4-1{
-  color: #232323;
-  font-weight: 300;;
-}
 .section-dark{
   background-color: #000;
   color: #b7b7b7;
 }
 
-.img{
+.img .slidein {
 display: inline-flex;
+animation-name: slidein;
+animation-duration: 5s;
 }
 
-@keyframes slidein{
-  from { margin-bottom: 50%; }
-  to   { margin-top: 100%; }
+.grid-div{
+  position: relative;
+  max-width: 1200px;
+}
+
+.grid-1{
+  position: absolute;
+  left: 10px;
+  width: 200px;
+}
+.grid-2{
+  position: absolute;
+  right: 650px;
+  width: 200px; 
+}
+.grid-3{
+  position: absolute;
+  right: 350px;
+  width: 200px; 
+}
+.grid-4{
+  position: absolute;
+  right: 100px;
+  width: 200px;
+}
+
+.footer{
+  align-items: center;
+  position: relative;
 }
 
 .footer img{
 width: 110px;
+position: absolute;
+top: 35px;
+left: 15px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1920px) {
-  .text-extra, .title-sections .text-fixed {
-    font-size: 2em;
-  }
-} 
-
-@media screen and (max-width: 480px) {
-  .text-extra, .title-sections .text-fixed{
-    font-size: 12px;
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
-  }
-
+.footer-text{
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  color: #6f6f6f;
 }
 
-.risco-text{
-  height: 20px;
-  width: 100%;
-  position: relative;
+.icons{
+  width: 10px;
+  position: absolute;
+  top: 5px;
+  right: 10%;
 }
