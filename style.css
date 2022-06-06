@@ -46,7 +46,11 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+.offcanvas-title{
+font-size: 25px;
 }
 
 .navbar-brand img {
@@ -55,11 +59,11 @@ body {
 
 .swiper {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
 .slide {
-  height: 250px;
+  height: 400px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -68,20 +72,23 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+  margin-left: 5%;
 
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  -webkit-justify-content: left;
-  justify-content: left;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  -webkit-align-items: right;
-  align-items: left;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
 }
 
 .swiper-slide img {
@@ -113,11 +120,13 @@ body {
 }
 
 .title-slide {
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff214f;
 }
 
 .description-slide {
-  font-size: 60px;
+  font-size: 55px;
   text-align: start;
 }
 
@@ -183,7 +192,7 @@ figure {
 
 .linha-text {
   width: 100%;
-  border-bottom: 1px solid #626262;
+  border-bottom: 1px solid #ff214f;
   position: absolute;
   top: 28px;
 }
@@ -209,6 +218,7 @@ figure {
 .section-dark {
   background-color: #000;
   color: #b7b7b7;
+  height: 700px;
 }
 
 .container-img {
