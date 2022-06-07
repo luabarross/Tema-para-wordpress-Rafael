@@ -78,68 +78,25 @@
         </section>
         <section>
             <div class="container-grid">
-                <div class="box">
+                <div class="grid-sizer"></div>
+                <div class="grid-item box">
                     <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-13.jpg.webp"
-                            class="grid-item"></img>
+                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-13.jpg.webp"></img>
+                        <figcaption class="description">
+                            <div class="texto">
+                                Lorem Ipsum Dolor Amet
+                            </div>
+                        </figcaption>
                     </figure>
                 </div>
-                <div class="box">
+                <div class="box landscape">
                     <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-21.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-20.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <figure class="landscape">
-                    <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-12.jpg.webp"
-                        class="grid-item"></img>
-                </figure>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-22.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-15.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-16.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-19.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-18.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-17.jpg.webp"
-                            class="grid-item"></img>
-                    </figure>
-                </div>
-                <div class="box">
-                    <figure>
-                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-14.jpg.webp"
-                            class="grid-item mb-5"></img>
+                        <img src="https://pofo.b-cdn.net/wp-content/uploads/2017/08/masonary-img-12.jpg.webp"></img>
+                        <figcaption class="description">
+                            <div class="texto">
+                                Lorem Ipsum Dolor Amet
+                            </div>
+                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -235,8 +192,8 @@
     <script>
         $('.grid').masonry({
             itemSelector: '.grid-item',
-            columnWidth: 0,
-            gap:0
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
         });
 
         var swiper = new Swiper(".mySwiper", {
