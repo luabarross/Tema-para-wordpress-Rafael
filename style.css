@@ -20,8 +20,16 @@ body {
   font-weight: 300;
 }
 
-.offcanvas-title{
-font-size: 25px;
+
+.nav-link{
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #000;
+}
+
+.navbar-nav .nav-item .active{
+  color: #ff214f;
 }
 
 .navbar-brand img {
@@ -34,9 +42,10 @@ font-size: 25px;
 }
 
 .slide {
-  height: 400px;
+  height: 420px;
   margin-left: 50px;
   margin-right: 50px;
+  padding-top: 70px;
 }
 
 .swiper-slide {
@@ -73,19 +82,21 @@ font-size: 25px;
   width: 20px;
   height: 20px;
   text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  color: #000;
+  line-height: 10px;
+  color: #9b9b9b;
   opacity: 1;
   background: transparent;
   border-radius: 0;
   font-size: 20px;
-  border-bottom: 1px solid;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .swiper-pagination-bullet-active {
-  color: #BBB;
+  color: #000;
   background: transparent;
+  border-bottom: 1px solid;
 }
 
 * {
@@ -169,6 +180,8 @@ figure.landscape .description .texto {
   bottom: 16px;
   color: white;
   font-size: 18px;
+  font-weight: 600;
+  font-family: Montserrat;
 }
 
 .box figure .description:hover, 
@@ -225,7 +238,7 @@ figure.landscape .description:hover {
 }
 
 .text-extra {
-  font-size: 40px;
+  font-size: 10px;
 }
 
 .section-dark {
@@ -312,22 +325,61 @@ figure.landscape .description:hover {
 }
 
 
-
-
-
-
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
 
   .title-sections {
-    font-size: 2em;
+    font-size: 20px;
   }
 
   .text-extra{
-    font-size: 4em;
+    padding-top: 15px;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
+
+
+  .navbar-toggler{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .swiper-slide{
+    width: 100%;
+  }
+
+  .swiper-wrapper{
+    width: 100%;
+  }
+
+  .swiper-pagination {
+   top: 19% !important;
+  }
+
+  .slide{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title-slide {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ff214f;
+  }
+
+  .description-slide {
+    font-size: 25px;
+    text-align: start;
+    width: 80%;
+  }
+
+  .slide .linha-text{
+    width: 70%;
+  }
 
   .title-sections{
     font-size: 12px;
