@@ -42,9 +42,9 @@ body {
 }
 
 .slide {
-  height: 420px;
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 60px;
   padding-top: 70px;
 }
 
@@ -111,8 +111,9 @@ body {
 }
 
 .description-slide {
-  font-size: 55px;
+  font-size: 50px;
   text-align: start;
+  width: 70%;
 }
 
 /* ---- grid ---- */
@@ -137,7 +138,9 @@ body {
 }
 
 .grid-item:hover.description {
-  background-image: linear-gradient(to top,rgba(255, 33, 79,.6),transparent);
+    background-image: linear-gradient(to top,rgba(255, 33, 79,.6),transparent);
+    font-size: 11px;
+    line-height: 14px;
 }
 
 figure {
@@ -205,19 +208,19 @@ figure.landscape .description:hover {
 /* ---- final grid item ---- */
 
 .section-size {
-  width: 80%;
+  width: 100%;
   height: 80%;
 }
 
 .slide .linha-text{
-  width: 100%;
+  width: 70%;
   border-bottom: 1px solid #ff214f;
   position: absolute;
   top: 28px;
 }
 
 .linha-text {
-  width: 100%;
+  width: 80%;
   border-bottom: 1px solid #626262;
   position: absolute;
   top: 28px;
@@ -225,7 +228,6 @@ figure.landscape .description:hover {
 
 .risco-text {
   height: 20px;
-  width: 100%;
   position: relative;
 }
 
@@ -247,7 +249,7 @@ figure.landscape .description:hover {
   height: 700px;
 }
 
-.dark-class{
+.size-class{
   width: 80%;
   height: 50%;
   margin-top: 130px;
