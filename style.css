@@ -20,7 +20,6 @@ body {
   font-weight: 300;
 }
 
-
 .nav-link{
   font-size: 60px;
   font-weight: 900;
@@ -102,6 +101,12 @@ body {
 * {
   box-sizing: border-box;
 
+}
+.slide .linha-text{
+  width: 70%;
+  border-bottom: 1px solid #ff214f;
+  position: absolute;
+  top: 28px;
 }
 
 .title-slide {
@@ -200,27 +205,17 @@ figure.landscape .description:hover {
   width: 100%;
 }
 
-.container-animation {
-  width: 70%;
-  position: absolute;
-}
-
 /* ---- final grid item ---- */
 
 .section-size {
   width: 100%;
   height: 80%;
-}
-
-.slide .linha-text{
-  width: 70%;
-  border-bottom: 1px solid #ff214f;
-  position: absolute;
-  top: 28px;
+  padding: 2em;
+  margin-bottom: 3rem;
 }
 
 .linha-text {
-  width: 80%;
+  width: 100%;
   border-bottom: 1px solid #626262;
   position: absolute;
   top: 28px;
@@ -239,20 +234,41 @@ figure.landscape .description:hover {
   font-weight: 300;
 }
 
-.text-extra {
-  font-size: 10px;
-}
-
 .section-dark {
   background-color: #1c1c1c;
   color: #b7b7b7;
   height: 700px;
+  padding: 2em;
 }
 
 .size-class{
   width: 80%;
   height: 50%;
   margin-top: 130px;
+  padding-left: 25px;
+}
+
+.container-img {
+  display: inline-flex;
+  width: 230px;
+  padding: 0 10px 0 10px;
+}
+
+.container-animation {
+  width: 100%;
+  text-align: justify;
+}
+
+.slidein {
+  margin-top: 100px;
+  bottom: 100px;
+  animation-name: slidein;
+  animation-duration: 2s;
+}
+
+.image{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .adress{
@@ -260,18 +276,10 @@ figure.landscape .description:hover {
   height: 30%;
 }
 
-.container-img {
-  display: inline-flex;
-}
-
-.slidein {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  margin-top: 200px;
-  bottom: 100px;
-  animation-name: slidein;
-  animation-duration: 2s;
+.adress-section{
+  padding: 48px; 
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .container-footer {
@@ -297,18 +305,18 @@ figure.landscape .description:hover {
   height: 25px;
 }
 
-.footer-text {
-  font-size: 13px;
-  font-weight: 300;
-  color: #6f6f6f;
-}
-
 .container-footer-text {
   width: 100%;
   margin-top: 20px;
   text-align: center;
   position: absolute;
   bottom: 50px;
+}
+
+.footer-text {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6f6f6f;
 }
 
 .container-icons {
@@ -331,17 +339,42 @@ figure.landscape .description:hover {
 
   .title-sections {
     font-size: 20px;
+    margin-bottom: 0;
   }
 
   .text-extra{
     padding-top: 15px;
-    font-size: 40px;
+    font-size: 30px;
   }
+
+  .section-dark {
+    width: 100%;
+    height: 650px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .size-class{
+    width: 80%;
+    height: 50%;
+    margin-top: 20px;
+  }
+
+  .container-animation {
+    width: 150%;
+    text-align: justify;
+  }
+
+  .image {
+    width: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+
 }
 
 @media screen and (max-width: 480px) {
-
-
   .navbar-toggler{
     position: absolute;
     right: 0;
@@ -383,19 +416,129 @@ figure.landscape .description:hover {
     width: 70%;
   }
 
+  .linha-text {
+    width: 0;
+  }
+
   .title-sections{
     font-size: 12px;
   }
 
   .text-extra {
-    font-size: 16px;
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    font-size: 25px;
   }
 
   .container-grid {
     column-count: 1;
   }
+  
+  .section-size {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+  }
+
+  .size-class{
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .risco-text {
+    height: 20px;
+  }
+  
+  .title-sections {
+    color: #626262;
+    margin: 0;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .section-dark {
+    width: 100%;
+    height: 1300px;
+    text-align: center;
+    margin-top: 45px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .container-animation {
+    width: 100%;
+    position: inherit;
+  }
+
+  .image {
+    width: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .adress{
+    width: 100%;
+    height: 30%;
+  }
+
+  .adress-section{
+    padding: 0; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .container-footer {
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  .container-logo {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    left: 120px;
+  }
+
+  .logo {
+    width: 110px;
+    height: 30px;
+    margin-top: 50px;
+  }
+
+  .container-footer-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 70px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6f6f6f;
+  }
+
+.container-icons {
+  width: 95%;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.icons {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
 }
 
